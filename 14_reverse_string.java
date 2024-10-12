@@ -33,3 +33,34 @@ public class Main{
         System.out.println(revStr);
     }
 }
+
+
+/******************************************************************************
+
+Write a java program to reverse a given String
+condition:
+The reverse string should be printed in lowercase only
+input : Welcome
+output : emocleW
+
+*******************************************************************************/
+import java.util.*;
+public class Main{
+    public static void main(String args[])
+    {
+        Scanner sc  = new Scanner(System.in);
+        String str = sc.nextLine();
+        str = str.toLowerCase();
+        String ans="";
+        for(int i = str.length()-1;i>=0;i--)
+        {
+            ans +=str.charAt(i);
+            
+            
+        }
+        System.out.println(ans);
+        
+        
+        
+    }
+}
