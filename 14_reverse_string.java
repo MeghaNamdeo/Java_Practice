@@ -6,8 +6,6 @@ The reverse string should be printed in lowercase only
 input : Welcome
 output : emocleW
 
-
-
 *******************************************************************************/
 import java.util.*;
 public class Main{
