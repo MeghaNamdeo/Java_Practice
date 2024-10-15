@@ -6,6 +6,47 @@ Welcome to my Java Programming
 ouput
 Programming Java my to Welcome
 
+Note: The last character has not been ' '. 
+
+*******************************************************************************/
+
+import java.util.*;
+public class Main {
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		String str=sc.nextLine();
+		String arr[]=str.split(" ");
+		String ans ="";
+		int start =0;
+		int end=arr.length-1;
+		while(start<=end)
+		{
+			String temp = arr[start];
+			arr[start]=arr[end];
+            arr[end]=temp;
+			start++;
+			end--;
+		}
+		for(int i=0;i<arr.length;i++)
+		{  
+		    ans = ans + arr[i];
+		    if(i<arr.length-1)ans=ans+" ";
+		    
+		}
+		System.out.println(ans);
+	}
+}
+
+
+/**************************************************************************coeditor and press "Run" button to execute it.
+Reverse the words in a String
+
+input
+Welcome to my Java Programming
+ouput
+Programming Java my to Welcome
+
 
 
 *******************************************************************************/
