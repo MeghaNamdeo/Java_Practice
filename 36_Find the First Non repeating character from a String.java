@@ -14,33 +14,25 @@ import java.util.*;
 public class Main{
     public static void main(String args[])
     {
-        Scanner sc=new Scanner(System.in);
-        
+        Scanner sc = new Scanner(System.in);
         String str= sc.nextLine();
+        String ans ="";
         
-        char array[]=str.toCharArray();
-        
-        String ans="";
-        
-        Set<Character>seen=new HashSet<>();
-        
-        
-        for(int i=0;i<array.length;i++)
+        Set<Character>seen = new HashSet<>();
+        for(int i =0;i<str.length();i++)
         {
-            char ch = array[i];
-           if(seen.contains(ch))
-           {
-               break;
-           }
-           else{
-               seen.add(ch);
-               ans=ans+ch;
-           }
-            
-            
+            if(seen.contains(str.charAt(i)))
+            {
+                break;
+            }
+            else
+            {
+                seen.add(str.charAt(i));
+                ans=ans+str.charAt(i);
+            }
         }
-       
         System.out.println(ans);
+        
         
     }
 }
